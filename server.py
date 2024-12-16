@@ -3,9 +3,9 @@ from flask import request
 
 app = flask.Flask(__name__)
 
-@app.route('/pushbutton', methods=['GET'])
+@app.route('/pushbutton', methods=['POST'])
 def pushbutton():
-    # print(request.json['id'])
+    print(request.json['id'])
     return '', 200
 
 if __name__ == '__main__':
